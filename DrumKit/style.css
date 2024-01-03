@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+#headline{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+div{
+    display: block;
+}
+.bigbox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    justify-items: center;
+}
+.box{
+    flex-basis: 100%;
+    color: white;
+    border: 5px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: 60px;
+    background-color: #050339;
+    text-align: center;
+}
+kbd{
+    font-size: 40px;
+
+}
+.sound{
+    letter-spacing: .1 rem;
+}
+.footer{
+    position: fixed;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}

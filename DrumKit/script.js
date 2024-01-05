@@ -1,4 +1,11 @@
-function myFunction(event) {
+function keyEvent(event) {
     let key = event.key;
-    document.getElementById("headline").innerHTML = "The key was: " + key;
+    playAudio(key.toUpperCase());
   }
+
+  function playAudio(id) { 
+    var x = document.getElementById(id);
+    x.play(); 
+  } 
+ // document.getElementById("body").addEventListener("keypress", keyEvent(Event));
+  

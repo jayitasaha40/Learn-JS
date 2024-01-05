@@ -4,50 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Drum Kit</title>
     <script src="script.js"></script>
 </head>
-<body onkeydown="myFunction(event)">
+<body onkeydown="keyEvent(event)" >
+
+    <audio src="sounds/boom.wav" id="G"></audio>
+    <audio src="sounds/clap.wav" id="A"></audio>
+    <audio src="sounds/hihat.wav" id="S"></audio>
+    <audio src="sounds/kick.wav" id="D"></audio>
+    <audio src="sounds/openhat.wav" id="F"></audio>
+    <audio src="sounds/ride.wav" id="H"></audio>
+    <audio src="sounds/snare.wav" id="J"></audio>
+    <audio src="sounds/tink.wav" id="L"></audio>
+    <audio src="sounds/tom.wav" id="K"></audio>
+
     <div class="header">
         <p id="headline">Drum Kit</p>
     </div>
-    <div class="bigbox">
-        <div class="box">
+    <div class="bigbox" >
+        <div class="box" onclick="playAudio('A')">
             <KBd>A</KBd><br>
             <span class="sound">CLAP</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('S')">
             <KBd>S</KBd><br>
             <span class="sound">HIHAT</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('D')">
             <KBd>D</KBd><br>
             <span class="sound">KICK</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('F')">
             <KBd>F</KBd><br>
             <span class="sound">OPENHAT</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('G')">
             <KBd>G</KBd><br>
             <span class="sound">BOOM</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('H')">
             <KBd>H</KBd><br>
             <span class="sound">RIDE</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('J')">
             <KBd >J</KBd><br>
             <span class="sound">SNARE</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('K')">
             <KBd>K</KBd><br>
             <span class="sound">TOM</span>
         </div>
-        <div class="box">
+        <div class="box" onclick="playAudio('L')">
             <KBd>L</KBd><br>
             <span class="sound">TINK</span>
         </div>

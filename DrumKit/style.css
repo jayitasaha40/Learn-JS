@@ -29,6 +29,7 @@ div{
     width: 60px;
     background-color: #050339;
     text-align: center;
+    cursor: pointer;
 }
 kbd{
     font-size: 40px;

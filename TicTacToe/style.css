@@ -1,0 +1,43 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgba(0, 0, 0, 0.9); /* Initial transparent black background */
+    transition: background 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+#initial-content{
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#full-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: aliceblue;
+    margin-top: 8%;
+    text-align: center;
+}
+#show-content-btn {
+    border-radius: 50%;
+    padding: 30px; /* Adjust the padding based on your preference */
+    cursor: pointer;
+}
+table{
+    border-spacing: 10px;
+}
+tr,td{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 20px;
+    
+}

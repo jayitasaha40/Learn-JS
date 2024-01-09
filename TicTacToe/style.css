@@ -4,14 +4,23 @@ body {
     font-family: 'Arial', sans-serif;
     background: rgba(0, 0, 0, 0.9); /* Initial transparent black background */
     transition: background 0.5s ease-in-out;
+    
+}
+.flexbox{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
+.flexitem{
+    flex-grow: 2;
+    text-align: center;
+    margin-top: 5px;
+}
 p{
-    margin-top: -500px;
-    
+    margin-top: 5px;
+    font-size: 50px;
+    z-index: 80;
 }
 .hidden {
     display: none;
@@ -21,6 +30,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 80;
 }
 
 #full-content {
@@ -36,6 +46,7 @@ p{
     cursor: pointer;
 }
 table{
+    align-items: center;
     border-spacing: 10px;
     position: relative;
     z-index: 80;

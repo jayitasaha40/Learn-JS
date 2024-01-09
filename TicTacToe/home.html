@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p style="color: white; text-align: center; ">Player</p>
+    <div class="flexitem">
+        <p style="color: white; text-align: center; display: inline; overflow: hidden; " id="player">Player</p>
+    </div>
+    <div class="flexbox">
+        <audio src="sounds/Tap.wav" id="tap"></audio>
+    
+    
     <span></span>
    <span></span>
    <span></span>
@@ -31,10 +37,9 @@
        
     </div>
     
-    <div id="full-content" class="hidden">
-        <!-- Your full website content goes here -->
+    
         
-        <table>
+        <table id="full-content" class="hidden">
             <tr>
                 <td onclick="changeValue(1)" id="1"></td>
                 <td onclick="changeValue(2)" id="2"></td>

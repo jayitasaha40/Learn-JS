@@ -1,8 +1,10 @@
 var user;
 const winningPattern = [[0,1,2],
                         [3,4,5],
-                        [6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-                        
+                        [6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+
+const boxes = document.querySelectorAll(".box");
+
 document.getElementById('show-content-btn').addEventListener('click', function () {
      user = 1;
     const initialContent = document.getElementById('initial-content');
@@ -36,5 +38,10 @@ function changeValue(e){
         user = 1;
         document.getElementById("player").innerHTML="Player 1";
     }
+    
+boxes.forEach(box => {
+    
+    console.log(box.textContent);
+});
 }
 //comment

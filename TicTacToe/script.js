@@ -45,9 +45,17 @@ function changeValue(e){
     }
     
   winningPattern.forEach(pat => {
-    console.log( boxes[pat[0]].textContent);
-    if(boxes[pat[0]].textContent ==  boxes[pat[1]].textContent == boxes[pat[2]].textContent == 'X'){
-        console.log("JJJ")
+    
+    
+    if(boxes[pat[0]].textContent == 'X' && boxes[pat[1]].textContent == 'X' && boxes[pat[2]].textContent == 'X'){
+        document.getElementById("win").play();
+        document.getElementById("player").innerHTML = "Player 1 Win!!!"
+        
+    }
+    else if(boxes[pat[0]].textContent == 'O' && boxes[pat[1]].textContent == 'O' && boxes[pat[2]].textContent == 'O'){
+        document.getElementById("win").play();
+        document.getElementById("player").innerHTML = "Player 2 Win!!!"
+        
     }
   });
 }

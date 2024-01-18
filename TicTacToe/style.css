@@ -46,6 +46,7 @@ p{
     border-radius: 50%;
     padding: 30px; /* Adjust the padding based on your preference */
     cursor: pointer;
+    z-index: 80;
 }
 table{
     align-items: center;
@@ -73,7 +74,21 @@ td{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+.modal{
+    position: relative;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 10%;
+    z-index: 100;
+    background-color: white;
+    align-items: center;
+}
+#modalcontent{
+    border: 2px solid black;
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
 
 @keyframes move {
     100% {

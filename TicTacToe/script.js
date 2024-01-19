@@ -3,7 +3,9 @@ const winningPattern = [[0,1,2],
                         [3,4,5],
                         [6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 
+                        
 const boxes = document.querySelectorAll(".box");
+var modal = document.getElementById("modal");
 
 document.getElementById('show-content-btn').addEventListener('click', function () {
      user = 1;
@@ -50,11 +52,14 @@ function changeValue(e){
     if(boxes[pat[0]].textContent == 'X' && boxes[pat[1]].textContent == 'X' && boxes[pat[2]].textContent == 'X'){
         document.getElementById("win").play();
         document.getElementById("player").innerHTML = "Player 1 Win!!!"
+        modal.innerHTML= "Player 1 Win!!!"
+        modal.style.display = "block";
         
     }
     else if(boxes[pat[0]].textContent == 'O' && boxes[pat[1]].textContent == 'O' && boxes[pat[2]].textContent == 'O'){
         document.getElementById("win").play();
         document.getElementById("player").innerHTML = "Player 2 Win!!!"
+        modal.style.display = "block";
         
     }
   });

@@ -70,4 +70,3 @@ function changeValue(e){
     }
   });
 }
-//comment12lg

@@ -74,3 +74,8 @@ function changeValue(e){
     }
   });
 }
+
+document.getElementById("ok").addEventListener("click",function(){
+    modal.style.display = "none";
+    modalcontent.style.display = "none";
+})

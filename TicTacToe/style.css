@@ -87,13 +87,24 @@ td{
 
 #modalcontent {
     display: none;
-    margin-top: 3%;
+    margin-top: 5%;
     color: rgb(255, 255, 255);
     background-color: green;
     z-index: 9999;
 }
 
-
+#ok{
+    
+    margin-top: 0.2%;
+    margin-bottom: 2%;
+    padding: 0.3% 3%;
+    font-size: 15px;
+    font-family: 'Gloria Hallelujah', cursive;
+    border-radius: 20px;
+}
+#ok:hover{
+    background-color: #8b73b1;
+}
 
 @keyframes move {
     100% {

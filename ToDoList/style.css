@@ -30,9 +30,39 @@
     width: 30px;
     margin-left: 10px;
 }
+.row{
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom:25px ;
+    padding-left: 20px;
+}
 .row input{
     border:none ;
-    padding-top: 10px;
-    border-radius: 20px;
-    align-items: center;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 14px;
+    flex: 1;
+}
+button{
+    background: #ff5945;
+    color: #fff;
+    border:none ;
+    outline: none;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
 }

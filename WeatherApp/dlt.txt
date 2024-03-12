@@ -1,0 +1,4 @@
+<lhumidity></lhumidity<span id=" humidity"></span></li>
+<li>cloud_pct<span id="cloud_pct"></span></li>   
+<li>wind_speed <span id="wind_speed"></span></li>
+<li>wind_degrees <span id="wind_degrees"></span></li>

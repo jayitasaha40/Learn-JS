@@ -12,4 +12,18 @@ main{
     max-height: 50px;
     padding-right: 20px;
 }
-...
+li{
+    color: black;
+}
+#suninfo{
+    height: 150px;
+}
+#wind{
+    height: 150px;
+    width: 150px;
+    background: transparent;
+}
+#tempimg{
+    height: 150px;
+    width: 150px; 
+}

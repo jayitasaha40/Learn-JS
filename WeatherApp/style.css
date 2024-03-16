@@ -2,7 +2,7 @@
     color: white;
 }
 body{
-    background-color: black;
+    background: linear-gradient(57deg, #212529 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.4) 0%, #212529 60%);
 }
 
 main{
@@ -31,6 +31,16 @@ li{
 .cardhead{
     background-color: #E3651D;
 }
-.navcolor{
-    background-color: #750E21;
+.navbar-custom {
+    
+    background: linear-gradient(57deg, #212529 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%), radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.4) 0%, #212529 60%);
 }
+
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+.navbar-nav .nav-link, .navbar-nav .nav-link.active {
+    color: #ffffff; /* Change this to your desired color */
+}
+
+

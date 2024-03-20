@@ -1,5 +1,7 @@
-async function fetchData() {
-    const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle';
+async function fetchData(city) {
+    document.getElementById('cityName').innerText = city;
+    const url1 = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=';
+    let url = url1.concat(city); //'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle';
     const options = {
         method: 'GET',
         headers: {
@@ -30,7 +32,19 @@ async function fetchData() {
 }
 
 // Call the asynchronous function
-let result = fetchData();
+ 
+console.log(document.getElementById("city").value);
+ document.getElementById('submit').addEventListener('click',(e) =>
+{
+    e.preventDefault();
+    if(document.getElementById("city").value === ""){
+        fetchData("Dinhata");
+    }
+    else{
+        fetchData(document.getElementById("city").value);
+    }
+    
+} )
 
 
 

@@ -8,3 +8,4 @@
 ## Project 4: QR Code Generator
 ## Project 5: Weather App
 ## Project 6: Moving car 
+## Project 7: Snake Game

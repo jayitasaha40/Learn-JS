@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(img/bg.jpg);
+    background-size: 100vw 99vh;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.board{
+    border: 2px solid black;
+    background: linear-gradient(45deg, rgb(176, 234, 176) , rgb(235, 235, 131));
+    height: 80vh;
+    width: 40vw;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}

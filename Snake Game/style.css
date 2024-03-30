@@ -23,3 +23,11 @@
     grid-template-rows: repeat(18,1fr);
     grid-template-columns: repeat(18,1fr);
 }
+.food{
+    background-color: rgb(38 192 210);
+    border-radius: 20px;
+    border: 5px solid yellow;
+}
+.head{
+    background-color: red;
+}

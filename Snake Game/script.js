@@ -67,3 +67,34 @@ document.addEventListener("keydown", (e) =>{
     
     
 })
+
+
+
+// let startTime;
+
+// function animate(timestamp) {
+//   if (!startTime) {
+//     startTime = timestamp;
+//   }
+  
+//   // Calculate elapsed time since animation started
+//   const elapsedTime = timestamp - startTime;
+
+//   // Your animation logic goes here
+  
+//   // Example: Move an element horizontally
+//   const element = document.getElementById('animatedElement');
+//   const currentPosition = parseInt(element.style.left) || 0;
+//   const newPosition = currentPosition + 1;
+//   element.style.left = newPosition + 'px';
+
+//   // Check if elapsed time exceeds a certain duration (e.g., 2000 milliseconds)
+//   if (elapsedTime < 2000) { // Change 2000 to the desired duration
+//     // Request the next animation frame
+//     requestAnimationFrame(animate);
+//   }
+// }
+
+// // Start the animation loop
+// requestAnimationFrame(animate);
+

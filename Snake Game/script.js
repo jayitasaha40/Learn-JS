@@ -30,6 +30,11 @@ for(var i = 0; i < bodyArr.length; i++) {
     board.append(body);    
 }
 
+
+
+
+//Logic
+
 document.addEventListener("keydown", (e) =>{
     let dir = {x:0,y:0}; //Start
     let key = e.key;

@@ -1,6 +1,7 @@
 const board = document.getElementById("board");
 var bodyArr = [[3,5],[4,5]];
-// console.log(bodyArr.x);
+let dir = {x:0,y:0};
+// console.log(bodyArr[2]);
 
 
 //Show Food
@@ -30,12 +31,19 @@ for(var i = 0; i < bodyArr.length; i++) {
     board.append(body);    
 }
 
+   //Moving body
+   for(var i = bodyArr.length-2;i>=0;i--){
+    bodyArr[i+1] = bodyArr[i];
+}
+
+bodyArr[0][0] = bodyArr[0][0]+ dir.x;
+bodyArr[0][1] = bodyArr[0][1]+ dir.y;
 
 
 //Logic
 
 document.addEventListener("keydown", (e) =>{
-    let dir = {x:0,y:0}; //Start
+    dir = {x:0,y:0}; //Start
     let key = e.key;
     
     switch(key) {
@@ -67,8 +75,7 @@ document.addEventListener("keydown", (e) =>{
       }
     
     //   console.log(key);
-    //   console.log(dir);
-    
+   
     
 })
 

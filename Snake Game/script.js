@@ -11,33 +11,52 @@ food.style.gridColumnStart = 2;
 food.style.gridRowStart = 2;
 board.append(food);
 
-//Showing head
-const head = document.createElement("div");
-head.classList.add("head");
-head.style.gridColumnStart = 5;
-head.style.gridRowStart = 2;
-board.append(head);
+function gameEngine(){
+    console.log(bodyArr);
+    board.innerHTML = "";
 
-//Showing Body
-for(var i = 0; i < bodyArr.length; i++) {
-    const body = document.createElement("div");
-    body.classList.add("snakeBody");
-    body.style.gridColumnStart = bodyArr[i][1];
-    body.style.gridRowStart = bodyArr[i][0];
-
-    const point = document.createElement("div");
-    point.classList.add("point");
-    body.append(point);
-    board.append(body);    
-}
-
-   //Moving body
+     //Moving body
    for(var i = bodyArr.length-2;i>=0;i--){
     bodyArr[i+1] = bodyArr[i];
+    console.log(bodyArr);
+    console.log("0");
 }
 
 bodyArr[0][0] = bodyArr[0][0]+ dir.x;
 bodyArr[0][1] = bodyArr[0][1]+ dir.y;
+
+console.log(bodyArr);
+
+//Showing Body & Head
+for(var i = 0; i < bodyArr.length; i++) {
+    if (i == 0){
+        //Showing head
+        const head = document.createElement("div");
+        head.classList.add("head");
+        head.style.gridColumnStart = bodyArr[i][1];;
+        head.style.gridRowStart = bodyArr[i][0];
+        board.append(head);
+    }
+    else{
+    
+        //Showing Body
+        const body = document.createElement("div");
+        body.classList.add("snakeBody");
+        body.style.gridColumnStart = bodyArr[i][1];
+        body.style.gridRowStart = bodyArr[i][0];
+    
+        const point = document.createElement("div");
+        point.classList.add("point");
+        body.append(point);
+        board.append(body);    
+}
+    }
+}
+
+
+ 
+
+  
 
 
 //Logic
@@ -73,6 +92,7 @@ document.addEventListener("keydown", (e) =>{
             break
           // code block
       }
+      gameEngine();
     
     //   console.log(key);
    

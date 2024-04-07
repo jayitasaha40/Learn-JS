@@ -4,17 +4,24 @@ let dir = {x:0,y:0};
 // console.log(bodyArr[2]);
 
 
-//Show Food
-const food = document.createElement("div");
-food.classList.add("food");
-food.style.gridColumnStart = 2;
-food.style.gridRowStart = 2;
-board.append(food);
+let startTime;
 
-function gameEngine(){
+function gameEngine(timestamp){
+    if(!startTime){
+        startTime = timestamp;
+    }
+
+    let collapsedtime = timestamp-startTime;
     console.log(bodyArr);
     board.innerHTML = "";
 
+
+    //Show Food
+    const food = document.createElement("div");
+    food.classList.add("food");
+    food.style.gridColumnStart = 2;
+    food.style.gridRowStart = 2;
+    board.append(food);
      //Moving body
    for(var i = bodyArr.length-2;i>=0;i--){
     bodyArr[i+1] = bodyArr[i];
@@ -51,6 +58,11 @@ for(var i = 0; i < bodyArr.length; i++) {
         board.append(body);    
 }
     }
+
+    if (collapsedtime < 2000) { // Change 2000 to the desired duration
+        //     // Request the next animation frame
+         requestAnimationFrame(gameEngine);
+         }
 }
 
 
@@ -99,9 +111,10 @@ document.addEventListener("keydown", (e) =>{
     
 })
 
+requestAnimationFrame(gameEngine);
 
 
-// let startTime;
+
 
 // function animate(timestamp) {
 //   if (!startTime) {

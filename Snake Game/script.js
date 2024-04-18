@@ -115,7 +115,6 @@ requestAnimationFrame(gameEngine);
 //   if (!startTime) {
 //     startTime = timestamp;
 //   }
-  
 //   // Calculate elapsed time since animation started
 //   const elapsedTime = timestamp - startTime;
 

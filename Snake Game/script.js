@@ -110,6 +110,8 @@ document.addEventListener("keydown", (e) =>{
    
 })
 requestAnimationFrame(gameEngine);
+
+
 // function animate(timestamp) {
 //   if (!startTime) {
 //     startTime = timestamp;

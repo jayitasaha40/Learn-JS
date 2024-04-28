@@ -141,4 +141,3 @@ requestAnimationFrame(gameEngine);
 
 
 
-length

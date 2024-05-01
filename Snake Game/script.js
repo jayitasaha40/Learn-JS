@@ -137,5 +137,3 @@ requestAnimationFrame(gameEngine);
 // // Start the animation loop
 // requestAnimationFrame(animate);
 
-
-

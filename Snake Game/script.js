@@ -89,7 +89,7 @@ document.addEventListener("keydown", (e) =>{
           dir.y = 0;
           break;
         
-          
+      
         case "ArrowDown":
           // code block
           dir.x = 0;

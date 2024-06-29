@@ -107,7 +107,7 @@ document.addEventListener("keydown", (e) =>{
       }
       gameEngine();
     
-    //   console.log(key);
+
    
 })
 requestAnimationFrame(gameEngine);

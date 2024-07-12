@@ -66,7 +66,6 @@ for(var i = 0; i < bodyArr.length; i++) {
 }
 
 
- 
 //Logic
 
 document.addEventListener("keydown", (e) =>{

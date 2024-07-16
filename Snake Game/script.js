@@ -64,7 +64,6 @@ for(var i = 0; i < bodyArr.length; i++) {
          requestAnimationFrame(gameEngine);
          }
 }
-
 //Logic
 
 document.addEventListener("keydown", (e) =>{
